@@ -1,0 +1,1 @@
+/Users/ariefmaffrudin/Code/Android/mvicouroutine/buildSrc/build/classes/kotlin/main/Deps.class:/Users/ariefmaffrudin/Code/Android/mvicouroutine/buildSrc/build/classes/kotlin/main/Versions.class
