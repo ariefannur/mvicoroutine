@@ -28,6 +28,8 @@ object Versions{
     const val okhttp = "4.2.0"
 
     const val gson = "2.8.1"
+
+    const val material = "1.1.0-alpha07"
 }
 
 object Deps{
@@ -68,4 +70,6 @@ object Deps{
 
     const val gson = "com.google.code.gson:gson:${Versions.gson}"
     const val gsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
+
+    const val material = "com.google.android.material:material:${Versions.material}"
 }

@@ -17,6 +17,8 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField "String", "API_KEY", "\"63406655e9ada6c067362ca5f498dceb\""
+
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -65,6 +67,8 @@ dependencies {
     implementation Deps.gsonConverter
     implementation Deps.okhttp
     implementation Deps.okhttpLogging
+
+    implementation Deps.material
 
 
 }

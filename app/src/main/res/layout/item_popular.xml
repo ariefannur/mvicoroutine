@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/mtrl_btn_padding_left">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_poster"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="190dp"
+        app:cardElevation="16dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/img_poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cv_poster"
+        android:layout_marginTop="8dp"
+        tools:text="This is title gais"
+        android:textColor="@color/black"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:textSize="16sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/rating"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:numStars="5"
+        android:maxWidth="16dp"
+        android:maxHeight="16dp"
+        style="?android:attr/ratingBarStyleSmall"
+        android:outlineSpotShadowColor="@color/orange"
+        android:progressBackgroundTint="@color/grey"
+        android:progressTint="@color/orange"
+        android:layout_width="0dp"
+        android:stepSize="0.5"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
